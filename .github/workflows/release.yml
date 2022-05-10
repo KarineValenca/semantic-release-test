@@ -18,5 +18,4 @@ jobs:
           git fetch --tags --force 
           VERSION=$(git describe --tags --abbrev=0)
           echo ${VERSION}
-          echo "${VERSION} | grep -o  '\-rc.*$'
-      
+          echo ${VERSION} | egrep -o  '^[^-rc]+'  
