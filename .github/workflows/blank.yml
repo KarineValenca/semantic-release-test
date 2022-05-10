@@ -19,4 +19,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           append_to_pre_release_tag: 'rc-${{ github.run_id }}'
-          pre_release_branches: 'main'
+          pre_release_branches: main
